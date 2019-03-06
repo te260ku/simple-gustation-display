@@ -106,13 +106,16 @@ ul{
 
 
 
+
 ul.list {
-	padding:0.5em;
-	list-style-type:none;
+	/* padding:0.5em; */
+  list-style-type:none;
+
 }
 ul.list li {
 	position:relative;
-	padding: 0em 0.3em 0.3em 1.3em;
+  padding: 0em 0.3em 0.8em 1.3em;
+  font-size: 1.2em;
 }
 ul.list li::before {
 	position: absolute;
@@ -133,15 +136,28 @@ ul.list li::before {
 .bom-list {
   height: auto;
   width: 90%;
-  margin: 0 auto;
+}
+.system-overview {
+  height: auto;
+  width: 90%;
+  padding-top: 70px;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.bom {
+  padding: 50px 0px;
 }
 
 
 
 
-
 .overview {
-  padding: 60px 30px 0px 30px;
+  padding: 100px 0px 0px 0px;
 }
 
 
@@ -159,21 +175,25 @@ h2 {
   font-weight: bold;
   /* padding-left: 5px;
   border-bottom: 1px solid #5DA797; */
+  letter-spacing: 2px;
 }
 
 .bom h2 {
   display: block;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   padding: 60px 0px 10px 0px;
 }
 
 .bom-img {
-  padding: 30px 10px;
+  padding: 50px 0px 0px 20px;
 }
 
 
 
-
+.circuit {
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -181,6 +201,10 @@ h2 {
   .card-deck-title {
     padding: 100px 35px 20px 35px;
   }
+
+.card-deck-title h3 {
+  font-size: 1.6em;
+}
 
 
 /* main */
@@ -226,9 +250,9 @@ h2 {
 
 
 .card-text {
-  color: grey;
-  line-height: 27px;
-  font-size: 18px;
+  color: #555;
+  line-height: 32px;
+  font-size: 15px;
 }
 .card-title {
   font-family: 'Raleway', sans-serif;
@@ -243,23 +267,6 @@ h2 {
 
 
 
-/* about */
-.contents p, .contents h1 {
-  line-height: 30px;
-  color: white;
-}
-.contents h1 {
-  padding-top: 180px;
-}
-.contents p {
-  padding-bottom: 150px;
-}
-.about {
-  background-image: url(img/about-background.png);
-  background-size: cover;
-  background-position: center;
-}
-/*  */
 
 
 /* fotter */
@@ -308,20 +315,24 @@ h2 {
 
 
 
-.btn-square {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #5DA797;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #454545;
-  border-radius: 3px;
-  border-radius: 10px;
-}
-.btn-square:active {
-  /*ボタンを押したとき*/
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+
+
+.download {
+  text-align: center;
+  padding: 50px 0px;
 }
 
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #5DA797;
+  border: solid 2px #5DA797;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #5DA797;
+  color: white;
+}
