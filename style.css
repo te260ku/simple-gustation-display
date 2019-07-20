@@ -74,6 +74,7 @@ ul{
   background-image: url(img/header.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -200px;
   margin: 0px;
 }
 .header-text {
